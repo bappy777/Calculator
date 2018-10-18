@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <form action="">
+        <div class="my-calculator">
+            <div class="cal-display">
+                <input type="text" placeholder="0" name="display" class="calculatorScreen">
+            </div>
+
+            <div class="cal-button">
+                <input class="cal-b" value="7" type="button" onclick="calculation(this.value)">
+                <input class="cal-b" value="8" type="button" onclick="calculation(this.value)">
+                <input class="cal-b" value="9" type="button" onclick="calculation(this.value)">
+                <input class="cal-b" value="+" type="button" onclick="calculation(this.value)">
+            </div>
+            <div class="cal-button">
+                <input class="cal-b" value="4" type="button" onclick="calculation(this.value)">
+                <input class="cal-b" value="5" type="button" onclick="calculation(this.value)">
+                <input class="cal-b" value="6" type="button" onclick="calculation(this.value)">
+                <input class="cal-b" value="-" type="button" onclick="calculation(this.value)">
+            </div>
+            <div class="cal-button">
+                <input class="cal-b" value="1" type="button" onclick="calculation(this.value)">
+                <input class="cal-b" value="2" type="button" onclick="calculation(this.value)">
+                <input class="cal-b" value="3" type="button" onclick="calculation(this.value)">
+                <input class="cal-b" value="*" type="button" onclick="calculation(this.value)">
+            </div>
+            <div class="cal-button">
+                <input class="cal-b" value="0" type="button" onclick="calculation(this.value)">
+                <input class="cal-b" value="." type="button" onclick="calculation(this.value)">
+                <input class="cal-b" value="c" type="button" onclick="dp.value = null">
+                <input class="cal-b" value="/" type="button" onclick="calculation(this.value)">
+            </div>
+            <div class="cal-equal">
+                <input class="cal-b" id="equal" value="=" type="button" onclick="dp.value = eval(dp.value)">
+            </div>
+        </div>
+    </form>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
